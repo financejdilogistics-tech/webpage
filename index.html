@@ -448,7 +448,7 @@
 
   .services-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2px;
   }
   .service-card {
@@ -775,16 +775,16 @@
 <!-- ── STATS ── -->
 <div class="stats reveal">
   <div class="stat-item">
-    <div class="stat-num">10<span>+</span></div>
-    <div class="stat-label" data-i18n="stats.years">Años de Experiencia</div>
+    <div class="stat-num">ES<span>/KO</span></div>
+    <div class="stat-label" data-i18n="stats.trilingual">Trilingüe · ES / EN / KO</div>
   </div>
   <div class="stat-item">
     <div class="stat-num">24<span>H</span></div>
     <div class="stat-label" data-i18n="stats.response">Respuesta de Emergencia</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num">99<span>%</span></div>
-    <div class="stat-label" data-i18n="stats.ontime">Puntualidad</div>
+    <div class="stat-num" style="font-size:clamp(18px,2.5vw,28px); padding-top:8px;">APODACA<span style="font-size:0.5em;"><br>NL</span></div>
+    <div class="stat-label" data-i18n="stats.warehouse">Bodega Propia</div>
   </div>
   <div class="stat-item">
     <div class="stat-num">
@@ -806,31 +806,61 @@
     <div class="service-card reveal">
       <div class="service-num">01</div>
       <div class="service-icon">
-        <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
       </div>
       <div class="service-name" data-i18n="svc1.name">COORDINACIÓN PUERTO-INTERIOR</div>
-      <p class="service-desc" data-i18n="svc1.desc">Del Puerto de Manzanillo a Monterrey y hasta la frontera con EUA — JDI selecciona los mejores transportistas, rutas y apoyos aduanales para que su carga llegue a tiempo, siempre.
-      </p>
+      <p class="service-desc" data-i18n="svc1.desc">Del Puerto de Manzanillo hacia Monterrey o cualquier punto del interior. JDI coordina transportistas, rutas y tiempos para que su carga llegue sin contratiempos.</p>
       <div class="service-tags">
         <span class="service-tag" data-i18n="svc1.t1">Manzanillo → Monterrey</span>
-        <span class="service-tag" data-i18n="svc1.t2">Monterrey → EUA</span>
-        <span class="service-tag" data-i18n="svc1.t3">Apoyo Aduanal</span>
-        <span class="service-tag" data-i18n="svc1.t4">Coordinación de Transporte</span>
+        <span class="service-tag" data-i18n="svc1.t2">Coordinación Total</span>
       </div>
     </div>
     <div class="service-card reveal" style="transition-delay:0.1s">
       <div class="service-num">02</div>
       <div class="service-icon">
+        <svg viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+      </div>
+      <div class="service-name" data-i18n="svc2.name">APOYO ADUANAL</div>
+      <p class="service-desc" data-i18n="svc2.desc">JDI coordina el proceso de despacho aduanal a través de agentes aduanales certificados. Gestionamos la documentación y el seguimiento para que su importación fluya sin demoras.</p>
+      <div class="service-tags">
+        <span class="service-tag" data-i18n="svc2.t1">Importación / Exportación</span>
+        <span class="service-tag" data-i18n="svc2.t2">Gestión Documental</span>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.2s">
+      <div class="service-num">03</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/></svg>
+      </div>
+      <div class="service-name" data-i18n="svc3.name">ALMACENAJE · APODACA</div>
+      <p class="service-desc" data-i18n="svc3.desc">Contamos con bodega propia en Apodaca, Nuevo León. Almacenamos su mercancía de forma segura y coordinamos la distribución al destino final cuando usted lo requiera.</p>
+      <div class="service-tags">
+        <span class="service-tag" data-i18n="svc3.t1">Apodaca, N.L.</span>
+        <span class="service-tag" data-i18n="svc3.t2">Distribución Local</span>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.3s">
+      <div class="service-num">04</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 3L3 10.53v.98l6.84 2.65L12.48 21h.98L21 3z"/></svg>
+      </div>
+      <div class="service-name" data-i18n="svc4.name">TRANSPORTE A EUA</div>
+      <p class="service-desc" data-i18n="svc4.desc">Cuando su carga necesita cruzar la frontera, JDI coordina el traslado hasta el destino final en Estados Unidos. Gestionamos los trámites fronterizos y la logística en destino según sus necesidades.</p>
+      <div class="service-tags">
+        <span class="service-tag" data-i18n="svc4.t1">Frontera México–EUA</span>
+        <span class="service-tag" data-i18n="svc4.t2">Destino Final USA</span>
+      </div>
+    </div>
+    <div class="service-card reveal" style="transition-delay:0.4s">
+      <div class="service-num">05</div>
+      <div class="service-icon">
         <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.34C18 2.54 15.46 0 12.34 0 11 0 9.72.55 8.78 1.49L7 3.27 5.22 1.49C4.28.55 3 0 1.66 0-.28 2.91 0 5.66 0 8c0 3.31 2.69 6 6 6h2v8h8v-8h2c3.31 0 6-2.69 6-6V6h-4zm-8 12H12v-8H8V8H6c-2.21 0-4-1.79-4-4V6h16v2c0 2.21-1.79 4-4 4h-2v8z"/></svg>
       </div>
-      <div class="service-name" data-i18n="svc2.name">HAND CARRY</div>
-      <p class="service-desc" data-i18n="svc2.desc">Para envíos urgentes o de alto valor, nuestro servicio hand carry asigna un agente dedicado que gestiona y acompaña su mercancía de puerta a puerta con máxima seguridad.
-      </p>
+      <div class="service-name" data-i18n="svc5.name">HAND CARRY</div>
+      <p class="service-desc" data-i18n="svc5.desc">Para envíos urgentes o de alto valor, un agente dedicado acompaña y gestiona su mercancía de puerta a puerta. Ideal para documentos críticos, refacciones urgentes o bienes de alto valor.</p>
       <div class="service-tags">
-        <span class="service-tag" data-i18n="svc2.t1">Puerta a Puerta</span>
-        <span class="service-tag" data-i18n="svc2.t2">Documentos Urgentes</span>
-        <span class="service-tag" data-i18n="svc2.t3">Bienes de Alto Valor</span>
-        <span class="service-tag" data-i18n="svc2.t4">Mismo Día</span>
+        <span class="service-tag" data-i18n="svc5.t1">Puerta a Puerta</span>
+        <span class="service-tag" data-i18n="svc5.t2">Urgente · Alto Valor</span>
       </div>
     </div>
   </div>
@@ -848,29 +878,29 @@
         <li class="why-item reveal">
           <span class="why-item-num">01</span>
           <div>
-            <div class="why-item-title" data-i18n="why.i1t">Expertos en Coordinación</div>
-            <div class="why-item-desc" data-i18n="why.i1d">No solo transportamos — orquestamos. JDI gestiona cada etapa del recorrido de su carga para garantizar una entrega fluida y puntual.</div>
+            <div class="why-item-title" data-i18n="why.i1t">Coordinación, No Solo Transporte</div>
+            <div class="why-item-desc" data-i18n="why.i1d">JDI no mueve carga directamente — la orquesta. Seleccionamos los mejores transportistas, aduanales y rutas para que cada envío llegue sin contratiempos.</div>
           </div>
         </li>
         <li class="why-item reveal" style="transition-delay:0.1s">
           <span class="why-item-num">02</span>
           <div>
-            <div class="why-item-title" data-i18n="why.i2t">Respuesta de Emergencia 24/7</div>
-            <div class="why-item-desc" data-i18n="why.i2d">La carga urgente no respeta horarios. Nosotros tampoco. Nuestro equipo está disponible las 24 horas.</div>
+            <div class="why-item-title" data-i18n="why.i2t">Atención en Tu Idioma</div>
+            <div class="why-item-desc" data-i18n="why.i2d">Servicio disponible en español, inglés y coreano. Entendemos las necesidades de empresas coreanas operando en México y hablamos tu idioma.</div>
           </div>
         </li>
         <li class="why-item reveal" style="transition-delay:0.2s">
           <span class="why-item-num">03</span>
           <div>
             <div class="why-item-title" data-i18n="why.i3t">Red México–EUA</div>
-            <div class="why-item-desc" data-i18n="why.i3d">Relaciones sólidas con transportistas y agentes en Manzanillo, Monterrey y la frontera norte.</div>
+            <div class="why-item-desc" data-i18n="why.i3d">Relaciones consolidadas con transportistas, agentes aduanales y operadores en Manzanillo, Monterrey, Apodaca y la frontera norte.</div>
           </div>
         </li>
         <li class="why-item reveal" style="transition-delay:0.3s">
           <span class="why-item-num">04</span>
           <div>
-            <div class="why-item-title" data-i18n="why.i4t">Más de 10 Años de Experiencia</div>
-            <div class="why-item-desc" data-i18n="why.i4d">Una década coordinando logística internacional. Confianza construida un envío exitoso a la vez.</div>
+            <div class="why-item-title" data-i18n="why.i4t">Respuesta Rápida</div>
+            <div class="why-item-desc" data-i18n="why.i4d">La carga urgente no espera horarios de oficina. Respondemos con rapidez y mantenemos comunicación constante durante todo el proceso.</div>
           </div>
         </li>
       </ul>
@@ -922,103 +952,119 @@
 // ── i18n DATA ──
 const i18n = {
   ko: {
-    "nav.tagline": "물류 코디네이션 전문",
+    "nav.tagline": "멕시코 물류 코디네이션",
     "nav.services": "서비스",
-    "nav.about": "회사 소개",
+    "nav.about": "JDI 소개",
     "nav.contact": "문의",
-    "hero.tag": "멕시코 물류 코디네이션 전문 기업",
+    "hero.tag": "멕시코 물류 코디네이션 전문",
     "hero.h1": "LOGISTICS",
-    "hero.sub": "멕시코와 미국 내 어디서든, 어디로든",
-    "hero.desc": "JDI는 물류를 직접 운영하는 게 아니라, 최적의 물류 솔루션을 설계하고 조율합니다. 만사니요 항구에서 몬테레이, 그리고 미국까지 — 당신의 화물이 가장 빠른 길을 찾도록 합니다.",
-    "hero.cta1": "견적 요청 →",
+    "hero.sub": "멕시코 어디서든 · 원하는 곳까지",
+    "hero.desc": "JDI는 화물을 직접 운송하는 것이 아니라, 최적의 운송업체·통관사·루트를 선정하고 전 과정을 조율하는 물류 코디네이터입니다. 만사니요 항구에서 몬테레이까지, 그리고 미국까지.",
+    "hero.cta1": "견적 문의 →",
     "hero.cta2": "서비스 보기",
-    "marquee.inland": "물류 코디네이션",
+    "marquee.inland": "항구→내륙 운송 코디네이션",
     "marquee.hand": "핸드 캐리",
     "marquee.urgent": "긴급 배송",
-    "marquee.tracking": "한국어 · 영어 · 스페인어 서비스 가능",
+    "marquee.tracking": "한국어 · 영어 · 스페인어 응대",
     "marquee.nationwide": "멕시코 · 미국 네트워크",
-    "stats.years": "업력",
+    "stats.trilingual": "3개 국어 응대 · 한/영/스",
     "stats.response": "긴급 대응",
-    "stats.ontime": "정시 도착률",
+    "stats.warehouse": "아포다카 자체 창고",
     "stats.network": "멕시코 · 미국",
     "services.tag": "주요 서비스",
     "services.title": "핵심<br><span>서비스</span>",
-    "svc1.name": "항구 내륙 운송",
-    "svc1.desc": "만사니요 항구에서 몬테레이까지, 그리고 몬테레이에서 미국 국경까지. JDI는 최적의 운송업체와 루트를 선정하여 화물이 안전하고 신속하게 목적지에 도달하도록 전 과정을 조율합니다.",
+    "svc1.name": "항구 → 내륙 운송",
+    "svc1.desc": "만사니요 항구에서 몬테레이 등 내륙 목적지까지. JDI가 운송업체, 루트, 일정을 직접 조율하여 화물이 문제 없이 도착하도록 관리합니다.",
     "svc1.t1": "만사니요 → 몬테레이",
-    "svc1.t2": "몬테레이 → 미국",
-    "svc1.t3": "통관 지원",
-    "svc1.t4": "운송 코디네이션",
-    "svc2.name": "핸드 캐리",
-    "svc2.desc": "긴급하거나 고가의 화물은 전담 핸드캐리 서비스로 처리합니다. 운반 전 과정을 직접 관리하여 최고의 보안과 속도를 보장합니다.",
-    "svc2.t1": "도어 투 도어",
-    "svc2.t2": "긴급 서류",
-    "svc2.t3": "고가 화물",
-    "svc2.t4": "당일 배송",
-    "why.tag": "선택 이유",
+    "svc1.t2": "전 과정 코디네이션",
+    "svc2.name": "통관 지원",
+    "svc2.desc": "공인 통관사(Agente Aduanal)를 통해 수출입 통관 절차를 진행합니다. JDI가 서류 준비부터 진행 상황 관리까지 조율하여 통관 지연을 최소화합니다.",
+    "svc2.t1": "수입 / 수출",
+    "svc2.t2": "서류 관리",
+    "svc3.name": "창고 · 아포다카",
+    "svc3.desc": "누에보레온 주 아포다카에 자체 창고를 보유하고 있습니다. 화물을 안전하게 보관하고, 필요 시 최종 목적지까지의 배송을 함께 조율합니다.",
+    "svc3.t1": "아포다카, 누에보레온",
+    "svc3.t2": "보관 및 배송",
+    "svc4.name": "미국 연계 운송",
+    "svc4.desc": "미국 내 목적지까지 운송이 필요한 경우, JDI가 국경 통관과 미국 내 운송을 함께 조율합니다. 필요에 따라 최종 목적지까지 연결 가능합니다.",
+    "svc4.t1": "멕시코→미국 국경",
+    "svc4.t2": "미국 내 목적지까지",
+    "svc5.name": "핸드 캐리",
+    "svc5.desc": "긴급하거나 고가인 화물의 경우, 전담 담당자가 직접 동행하여 화물을 문 앞에서 문 앞까지 안전하게 전달합니다. 중요 서류, 긴급 부품, 고가 물품에 적합합니다.",
+    "svc5.t1": "도어 투 도어",
+    "svc5.t2": "긴급·고가 화물",
+    "why.tag": "JDI를 선택하는 이유",
     "why.title": "왜<br><span>JDI?</span>",
-    "why.i1t": "코디네이션 전문성",
-    "why.i1d": "JDI는 단순 운송이 아닌, 화물의 전 여정을 설계하고 최적화하는 물류 코디네이터입니다.",
-    "why.i2t": "멕시코 · 미국 네트워크",
-    "why.i2d": "만사니요, 몬테레이, 미국 국경까지 이어지는 탄탄한 파트너 네트워크를 보유합니다.",
-    "why.i3t": "24시간 긴급 대응",
-    "why.i3d": "긴급 상황은 업무 시간을 따르지 않습니다. 저희도 마찬가지입니다. 언제든 연락주세요.",
-    "why.i4t": "10년 이상 전문 경험",
-    "why.i4d": "국제 물류 코디네이션 분야 10년의 경험. 신뢰는 한 번의 성공적인 배송에서 시작됩니다.",
+    "why.i1t": "운송이 아닌 코디네이션",
+    "why.i1d": "JDI는 화물을 직접 운송하지 않습니다. 최적의 업체와 루트를 선정하고 전 과정을 관리하는 물류 코디네이터입니다.",
+    "why.i2t": "한국어로 소통 가능",
+    "why.i2d": "한국어·영어·스페인어로 응대합니다. 멕시코에서 운영 중인 한국 기업의 물류 니즈를 정확히 이해합니다.",
+    "why.i3t": "멕시코 · 미국 네트워크",
+    "why.i3d": "만사니요, 몬테레이, 아포다카, 미국 국경까지 이어지는 탄탄한 파트너 네트워크를 갖추고 있습니다.",
+    "why.i4t": "빠른 응대",
+    "why.i4d": "긴급 화물은 시간이 생명입니다. 빠른 응대와 진행 상황 공유를 통해 고객이 항상 상황을 파악할 수 있도록 합니다.",
     "why.center": "우리는 조율합니다",
     "contact.tag": "문의하기",
-    "contact.title": "지금<br><span>시작합시다.</span>",
-    "contact.desc": "물류 코디네이션이 필요하신가요? 연락주시면 한 시간 이내에 최적의 솔루션을 제안드립니다.",
-    "contact.cta": "견적 요청 →",
+    "contact.title": "지금<br><span>시작하세요.</span>",
+    "contact.desc": "물류 코디네이션이 필요하신가요? 메일로 연락주시면 빠르게 검토 후 답변드리겠습니다.",
+    "contact.cta": "견적 문의 →",
   },
   en: {
     "nav.tagline": "Logistics Coordination",
     "nav.services": "Services",
     "nav.about": "About",
     "nav.contact": "Contact",
-    "hero.tag": "Mexico-Based Logistics Coordination",
+    "hero.tag": "Logistics Coordination in Mexico",
     "hero.h1": "LOGISTICS",
-    "hero.sub": "FROM ANYWHERE IN MEXICO · TO ANYWHERE IN THE WORLD",
-    "hero.desc": "JDI doesn't just move cargo — we coordinate the entire logistics chain. From the Port of Manzanillo to Monterrey, and onward to the United States, we design the fastest, safest route for your freight.",
+    "hero.sub": "FROM ANYWHERE IN MEXICO · TO ANYWHERE",
+    "hero.desc": "JDI doesn't move cargo directly — we coordinate. We select the best carriers, customs agents and routes, managing the entire process so your freight arrives without issues.",
     "hero.cta1": "Request Quote →",
     "hero.cta2": "View Services",
-    "marquee.inland": "LOGISTICS COORDINATION",
+    "marquee.inland": "PORT-TO-INLAND COORDINATION",
     "marquee.hand": "HAND CARRY",
     "marquee.urgent": "URGENT DELIVERY",
-    "marquee.tracking": "AVAILABLE IN KOREAN · ENGLISH · SPANISH",
+    "marquee.tracking": "SERVICE IN KOREAN · ENGLISH · SPANISH",
     "marquee.nationwide": "MEXICO · USA NETWORK",
-    "stats.years": "Years Experience",
+    "stats.trilingual": "Trilingual · ES / EN / KO",
     "stats.response": "Emergency Response",
-    "stats.ontime": "On-Time Rate",
+    "stats.warehouse": "Own Warehouse · Apodaca",
     "stats.network": "Mexico · USA",
     "services.tag": "What We Do",
     "services.title": "CORE<br><span>SERVICES</span>",
     "svc1.name": "PORT-TO-INLAND COORDINATION",
-    "svc1.desc": "From the Port of Manzanillo to Monterrey and through to the US border — JDI selects the best carriers, routes and customs support so your cargo arrives on time, every time.",
+    "svc1.desc": "From the Port of Manzanillo to Monterrey or any inland destination. JDI coordinates carriers, routes and schedules so your cargo arrives without complications.",
     "svc1.t1": "Manzanillo → Monterrey",
-    "svc1.t2": "Monterrey → USA",
-    "svc1.t3": "Customs Support",
-    "svc1.t4": "Carrier Coordination",
-    "svc2.name": "HAND CARRY",
-    "svc2.desc": "For urgent or high-value shipments, our hand carry service assigns a dedicated agent to personally manage and escort your goods door-to-door with maximum security and speed.",
-    "svc2.t1": "Door-to-Door",
-    "svc2.t2": "Urgent Documents",
-    "svc2.t3": "High-Value Goods",
-    "svc2.t4": "Same Day",
-    "why.tag": "Why Choose Us",
+    "svc1.t2": "Full Coordination",
+    "svc2.name": "CUSTOMS SUPPORT",
+    "svc2.desc": "JDI coordinates the customs clearance process through certified customs brokers (Agentes Aduanales). We manage documentation and follow-up to minimize delays at the border.",
+    "svc2.t1": "Import / Export",
+    "svc2.t2": "Document Management",
+    "svc3.name": "WAREHOUSING · APODACA",
+    "svc3.desc": "We operate our own warehouse in Apodaca, Nuevo León. We store your goods securely and coordinate onward distribution to the final destination when needed.",
+    "svc3.t1": "Apodaca, N.L.",
+    "svc3.t2": "Storage & Distribution",
+    "svc4.name": "USA-BOUND TRANSPORT",
+    "svc4.desc": "When your cargo needs to cross the border, JDI coordinates the entire process through to the final destination in the United States, including border crossing logistics.",
+    "svc4.t1": "Mexico–USA Border",
+    "svc4.t2": "Final Destination USA",
+    "svc5.name": "HAND CARRY",
+    "svc5.desc": "For urgent or high-value shipments, a dedicated agent personally accompanies and manages your goods door-to-door. Ideal for critical documents, urgent parts or high-value items.",
+    "svc5.t1": "Door-to-Door",
+    "svc5.t2": "Urgent · High Value",
+    "why.tag": "Why Choose JDI",
     "why.title": "WHY<br><span>JDI?</span>",
-    "why.i1t": "Coordination Expertise",
-    "why.i1d": "We don't just transport — we orchestrate. JDI manages every step of your cargo's journey to ensure smooth, on-time delivery.",
-    "why.i2t": "Mexico–USA Network",
-    "why.i2d": "Deep-rooted relationships with carriers and agents across Manzanillo, Monterrey, and the US border give you the best routes.",
-    "why.i3t": "24/7 Emergency Response",
-    "why.i3d": "Urgent freight doesn't follow business hours. Neither do we. Our team is available around the clock.",
-    "why.i4t": "10+ Years of Expertise",
-    "why.i4d": "A decade of international logistics coordination. Trust built one successful shipment at a time.",
+    "why.i1t": "Coordination, Not Just Transport",
+    "why.i1d": "JDI doesn't move cargo directly — we orchestrate. We select the best carriers, customs agents and routes so every shipment goes smoothly.",
+    "why.i2t": "Service in Your Language",
+    "why.i2d": "Available in Spanish, English and Korean. We understand the needs of Korean companies operating in Mexico and speak your language.",
+    "why.i3t": "Mexico–USA Network",
+    "why.i3d": "Established relationships with carriers, customs agents and operators across Manzanillo, Monterrey, Apodaca and the northern border.",
+    "why.i4t": "Fast Response",
+    "why.i4d": "Urgent freight doesn't wait for office hours. We respond quickly and keep you informed throughout the entire process.",
     "why.center": "We Coordinate",
     "contact.tag": "Get In Touch",
     "contact.title": "LET'S<br><span>MOVE IT.</span>",
-    "contact.desc": "Need logistics coordination? Reach out and our team will respond with a tailored solution within the hour.",
+    "contact.desc": "Need logistics coordination in Mexico? Send us an email and we'll get back to you with a tailored solution.",
     "contact.cta": "Request a Quote →",
   },
   es: {
@@ -1029,46 +1075,54 @@ const i18n = {
     "hero.tag": "Coordinación Logística en México",
     "hero.h1": "LOGÍSTICA",
     "hero.sub": "DE CUALQUIER PUNTO EN MÉXICO · A CUALQUIER DESTINO",
-    "hero.desc": "JDI no solo mueve carga — coordinamos toda la cadena logística. Desde el Puerto de Manzanillo hasta Monterrey y hacia Estados Unidos, diseñamos la ruta más rápida y segura para su mercancía.",
+    "hero.desc": "JDI no mueve la carga directamente — la coordinamos. Seleccionamos los mejores transportistas, agentes aduanales y rutas para que su mercancía llegue sin contratiempos.",
     "hero.cta1": "Solicitar Cotización →",
     "hero.cta2": "Ver Servicios",
-    "marquee.inland": "COORDINACIÓN LOGÍSTICA",
+    "marquee.inland": "COORDINACIÓN PUERTO-INTERIOR",
     "marquee.hand": "HAND CARRY",
     "marquee.urgent": "ENTREGA URGENTE",
     "marquee.tracking": "SERVICIO EN ESPAÑOL · INGLÉS · COREANO",
     "marquee.nationwide": "RED MÉXICO · EUA",
-    "stats.years": "Años de Experiencia",
+    "stats.trilingual": "Trilingüe · ES / EN / KO",
     "stats.response": "Respuesta de Emergencia",
-    "stats.ontime": "Puntualidad",
+    "stats.warehouse": "Bodega Propia · Apodaca",
     "stats.network": "México · EUA",
     "services.tag": "Lo Que Hacemos",
     "services.title": "SERVICIOS<br><span>PRINCIPALES</span>",
     "svc1.name": "COORDINACIÓN PUERTO-INTERIOR",
-    "svc1.desc": "Del Puerto de Manzanillo a Monterrey y hasta la frontera con EUA — JDI selecciona los mejores transportistas, rutas y apoyos aduanales para que su carga llegue a tiempo, siempre.",
+    "svc1.desc": "Del Puerto de Manzanillo hacia Monterrey o cualquier punto del interior. JDI coordina transportistas, rutas y tiempos para que su carga llegue sin contratiempos.",
     "svc1.t1": "Manzanillo → Monterrey",
-    "svc1.t2": "Monterrey → EUA",
-    "svc1.t3": "Apoyo Aduanal",
-    "svc1.t4": "Coordinación de Transporte",
-    "svc2.name": "HAND CARRY",
-    "svc2.desc": "Para envíos urgentes o de alto valor, nuestro servicio hand carry asigna un agente dedicado que gestiona y acompaña su mercancía de puerta a puerta con máxima seguridad.",
-    "svc2.t1": "Puerta a Puerta",
-    "svc2.t2": "Documentos Urgentes",
-    "svc2.t3": "Bienes de Alto Valor",
-    "svc2.t4": "Mismo Día",
+    "svc1.t2": "Coordinación Total",
+    "svc2.name": "APOYO ADUANAL",
+    "svc2.desc": "JDI coordina el proceso de despacho aduanal a través de agentes aduanales certificados. Gestionamos la documentación y el seguimiento para que su importación fluya sin demoras.",
+    "svc2.t1": "Importación / Exportación",
+    "svc2.t2": "Gestión Documental",
+    "svc3.name": "ALMACENAJE · APODACA",
+    "svc3.desc": "Contamos con bodega propia en Apodaca, Nuevo León. Almacenamos su mercancía de forma segura y coordinamos la distribución al destino final cuando usted lo requiera.",
+    "svc3.t1": "Apodaca, N.L.",
+    "svc3.t2": "Almacenaje y Distribución",
+    "svc4.name": "TRANSPORTE A EUA",
+    "svc4.desc": "Cuando su carga necesita cruzar la frontera, JDI coordina el traslado hasta el destino final en Estados Unidos, incluyendo los trámites fronterizos y la logística en destino.",
+    "svc4.t1": "Frontera México–EUA",
+    "svc4.t2": "Destino Final en EUA",
+    "svc5.name": "HAND CARRY",
+    "svc5.desc": "Para envíos urgentes o de alto valor, un agente dedicado acompaña y gestiona su mercancía de puerta a puerta. Ideal para documentos críticos, refacciones urgentes o bienes de alto valor.",
+    "svc5.t1": "Puerta a Puerta",
+    "svc5.t2": "Urgente · Alto Valor",
     "why.tag": "Por Qué Elegirnos",
     "why.title": "¿POR QUÉ<br><span>JDI?</span>",
-    "why.i1t": "Expertos en Coordinación",
-    "why.i1d": "No solo transportamos — orquestamos. JDI gestiona cada etapa del recorrido de su carga para garantizar una entrega fluida y puntual.",
-    "why.i2t": "Red México–EUA",
-    "why.i2d": "Relaciones sólidas con transportistas y agentes en Manzanillo, Monterrey y la frontera norte le dan acceso a las mejores rutas.",
-    "why.i3t": "Respuesta de Emergencia 24/7",
-    "why.i3d": "La carga urgente no respeta horarios. Nosotros tampoco. Nuestro equipo está disponible las 24 horas.",
-    "why.i4t": "Más de 10 Años de Experiencia",
-    "why.i4d": "Una década coordinando logística internacional. Confianza construida un envío exitoso a la vez.",
+    "why.i1t": "Coordinación, No Solo Transporte",
+    "why.i1d": "JDI no mueve carga directamente — la orquesta. Seleccionamos los mejores transportistas, aduanales y rutas para que cada envío llegue sin contratiempos.",
+    "why.i2t": "Atención en Tu Idioma",
+    "why.i2d": "Servicio en español, inglés y coreano. Entendemos las necesidades de empresas coreanas en México y hablamos su idioma.",
+    "why.i3t": "Red México–EUA",
+    "why.i3d": "Relaciones consolidadas con transportistas, agentes aduanales y operadores en Manzanillo, Monterrey, Apodaca y la frontera norte.",
+    "why.i4t": "Respuesta Rápida",
+    "why.i4d": "La carga urgente no espera horarios de oficina. Respondemos con rapidez y mantenemos comunicación constante durante todo el proceso.",
     "why.center": "Coordinamos",
     "contact.tag": "Contáctenos",
     "contact.title": "VAMOS A<br><span>MOVERLO.</span>",
-    "contact.desc": "¿Necesita coordinación logística? Contáctenos y le responderemos con una solución a su medida en menos de una hora.",
+    "contact.desc": "¿Necesita coordinación logística en México? Escríbanos y le responderemos con una solución a su medida.",
     "contact.cta": "Solicitar Cotización →",
   }
 };
