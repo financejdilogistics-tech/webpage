@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jdilogistics.com.mx/sitemap.xml
+
+# Host
+Host: jdilogistics.com.mx
